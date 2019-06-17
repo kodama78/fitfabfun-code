@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "webpack-dev-server",
     "build": "NODE_ENV=production npm run clean && webpack -p",
-    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
+    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
