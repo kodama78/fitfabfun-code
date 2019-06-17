@@ -1,0 +1,117 @@
+body {
+    width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.panelContainer {
+    width: 100%;
+    visibility: hidden;
+    height: 500px;
+    background: white;
+    border: 1px solid black;
+    display: flex;
+}
+
+.panelContainer > span {
+    display: flex;
+}
+
+.panelContainer {
+    transition: visibility 5s;
+}
+
+.panelContainer {
+    visibility: initial;
+
+}
+
+.panel {
+    background: white;
+    height: 100%;
+    padding: 20px 15px;
+    max-width: 33.3%;
+    display: flex;
+    margin: 0 15px;
+    flex: 1;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.panel:first-child {
+    margin-left: 0;
+}
+
+.panel:last-child {
+    margin-right: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h3 {
+    margin-top: 0;
+}
+.imageContainer {
+    flex: 1;
+    height: 125px;
+    margin-right: 15px;
+    max-width: 110px;
+    border: 1px solid black;
+}
+
+.description {
+    flex: 1;
+}
+
+.thumbnailContainer {
+    width: 100%;
+}
+
+.thumbnail {
+    width: 75px;
+    height: 100px;
+    border: 1px solid black;
+    background: lightblue;
+    display: inline-block;
+    margin: 20px 10px;
+
+}
+
+.panel-enter {
+    opacity: 0.01;
+    transform: translate(100%);
+}
+
+.panel-enter:first-child {
+    opacity: 0.01;
+    transform: none;
+}
+
+.panel-enter.panel-enter-active {
+    opacity: 1;
+    transition: all 1000ms ease-in-out;
+    transform: translate(-100%);
+}
+
+.panel-enter.panel-enter-active:first-child {
+    -webkit-transition: none time;
+    -moz-transition: none time;
+    -ms-transition: none time;
+    -o-transition: none time;
+    transition: none time;
+    transform: none;
+}
+
+.panel-leave {
+    opacity: 1;
+    transform: translate(0%);
+}
+
+.panel-leave.panel-leave-active {
+    opacity: 0.01;
+    transition: transform 1000ms ease-in-out;
+    transform: translate(-100%);
+}
