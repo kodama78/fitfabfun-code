@@ -34,6 +34,6 @@ const mapDispatchToProps = dispatch => {
 	return {
 		addPanel: (panel) => dispatch(addToPanels(panel))
 	}
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
