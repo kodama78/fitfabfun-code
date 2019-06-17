@@ -6,7 +6,6 @@
   "scripts": {
     "clean": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development",
     "build": "NODE_ENV=production npm run clean && webpack -p",
     "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
   },
